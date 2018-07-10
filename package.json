@@ -1,0 +1,25 @@
+{
+  "name": "libmseedjs",
+  "version": "1.0.0",
+  "description": "NodeJS library for reading mSEED records",
+  "main": "record.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mseed",
+    "seismology",
+    "record",
+    "seedlink"
+  ],
+  "author": "Mathijs Koymans",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jollyfant/libmseedjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jollyfant/libmseedjs/issues"
+  },
+  "homepage": "https://github.com/Jollyfant/libmseedjs#readme"
+}
