@@ -59,12 +59,13 @@ mSEEDRecord.prototype.unpackData = function(data) {
 
 }
 
-/* Function mSEEDRecord.Id
- * 
- * Returns the stream identifier
- *
- */
-mSEEDRecord.prototype.Id = function() {
+mSEEDRecord.prototype.id = function() {
+
+  /* Function mSEEDRecord.id
+   * 
+   * Returns the stream identifier
+   *
+   */
 
   return [
     this.header.network,
@@ -75,12 +76,13 @@ mSEEDRecord.prototype.Id = function() {
 
 }
 
-/* Function mSEEDRecord.Payload
- *
- * Returns payload representation of header
- * and record data
- */
-mSEEDRecord.prototype.Payload = function() {
+mSEEDRecord.prototype.payload = function() {
+
+  /* Function mSEEDRecord.payload
+   *
+   * Returns payload representation of header
+   * and record data
+   */
 
   return {
     'start': this.header.start,
@@ -91,7 +93,7 @@ mSEEDRecord.prototype.Payload = function() {
     'location': this.header.location,
     'channel': this.header.channel,
     'sampleRate': this.header.sampleRate,
-    'id': this.Id()
+    'id': this.id()
   }
 
 }
